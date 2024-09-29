@@ -17,8 +17,8 @@ This is a C++ Qt-based application for managing notes. The application allows us
 ## Installation
 
 1. **Download the Release Build:**
-   - Go to the [Releases](https://github.com/lucifron28/Notes-App-CP103-MidtermProject/tree/master/build/Desktop_Qt_6_7_2_MinGW_64_bit-Notes-CP103-Midterm-Project/release) section of the GitHub repository.
-   - Download the latest release build (e.g., `Notes-CP103-MidtermProject.zip`).
+   - Go to the [Release](https://github.com/lucifron28/Notes-App-CP103/release) section of the GitHub repository.
+   - Download the latest release build (`Notes-CP103-MidtermProject.zip`).
 
 2. **Extract the Zip File:**
    - Extract the contents of the downloaded zip file to a directory of your choice.
