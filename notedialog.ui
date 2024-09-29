@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>609</width>
-    <height>472</height>
+    <width>362</width>
+    <height>394</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,38 +16,51 @@
   <widget class="QTextEdit" name="textEdit">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>90</y>
+     <x>0</x>
+     <y>40</y>
      <width>361</width>
      <height>311</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">padding: 10px;</string>
+    <string notr="true">padding: 10px;
+background-color: #e09952;
+border: 2px solid black;
+color: black;</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>50</y>
+     <x>0</x>
+     <y>0</y>
      <width>361</width>
      <height>41</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">font: 20px;
-font-weight: 800;</string>
+font-weight: 800;
+background-color: #98591B;
+border: 2px solid black;
+border-bottom: 0;
+color: white;</string>
    </property>
   </widget>
   <widget class="QPushButton" name="saveButton">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>410</y>
+     <x>60</x>
+     <y>360</y>
      <width>83</width>
      <height>29</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #824D17;
+border: 2px solid black;
+color: white;
+border-radius: 5px;</string>
    </property>
    <property name="text">
     <string>Save</string>
@@ -56,11 +69,17 @@ font-weight: 800;</string>
   <widget class="QPushButton" name="cancelButton">
    <property name="geometry">
     <rect>
-     <x>350</x>
-     <y>410</y>
+     <x>220</x>
+     <y>360</y>
      <width>83</width>
      <height>29</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #824D17;
+border: 2px solid black;
+color: white;
+border-radius: 5px;</string>
    </property>
    <property name="text">
     <string>Cancel</string>

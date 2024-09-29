@@ -11,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+    this->setWindowTitle("New Programmerz Association Notes");
     notes.push_back({"Array", "An array is a collection of items stored at contiguous memory locations."});
     notes.push_back({"Linked List", "A linked list is a linear data structure where each element is a separate object."});
     notes.push_back({"Stack", "A stack is a linear data structure which follows a particular order in which the operations are performed."});
@@ -24,11 +24,6 @@ MainWindow::MainWindow(QWidget *parent)
     for (const auto &note : notes) {
         addListItem(note.title);
     }
-
-    QLabel *imageLabel = new QLabel(this);
-    QPixmap pixmap("C:\\Users\\Ron\\Downloads\\logo1.jpg");
-    imageLabel->setPixmap(pixmap);
-    imageLabel->setScaledContents(true);
 }
 
 MainWindow::~MainWindow()
@@ -52,9 +47,9 @@ void MainWindow::addListItem(const QString &text)
     QLabel *label = new QLabel(text);
     QPushButton *openButton = new QPushButton("Open");
     QPushButton *deleteButton = new QPushButton("Delete");
-    widget->setStyleSheet({"border-bottom: 1px solid white; margin-bottom: 5px; margin-top: 5px;"});
-    openButton->setStyleSheet({"background-color: black; border-radius: 8px; border: 1px solid yellow;"});
-    deleteButton->setStyleSheet({"background-color: black; border-radius: 8px; border: 1px solid red;"});
+    widget->setStyleSheet({"border-bottom: 1px solid #824d17; margin-bottom: 5px; margin-top: 5px;"});
+    openButton->setStyleSheet({"background-color: #824d17; border-radius: 8px; border: 1px solid black; color: white;"});
+    deleteButton->setStyleSheet({"background-color: #8B0000; border-radius: 8px; border: 1px solid red; color: white;"});
 
     layout->addWidget(label);
     layout->addWidget(openButton);

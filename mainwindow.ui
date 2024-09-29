@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>497</width>
+    <height>548</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,27 +17,32 @@
    <widget class="QListWidget" name="listWidget">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>80</y>
+      <x>10</x>
+      <y>70</y>
       <width>471</width>
       <height>391</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: 	black;
-color: white;
-font-weight: bold;
-</string>
+     <string notr="true">background-color: #e09952;
+color: black;
+font-weight: bold;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="addButton">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>480</y>
+      <x>390</x>
+      <y>470</y>
       <width>83</width>
       <height>29</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #824D17;
+border: 2px solid black;
+color: white;
+border-radius: 5px;</string>
     </property>
     <property name="text">
      <string>New Note</string>
@@ -46,16 +51,17 @@ font-weight: bold;
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>10</x>
       <y>20</y>
-      <width>461</width>
+      <width>471</width>
       <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">padding: 5px;
 font: 15pt &quot;Arial&quot;;
-font-weight: 700;</string>
+font-weight: 700;
+background-color: #824D17;</string>
     </property>
     <property name="text">
      <string>New Programmerz Association Notes</string>
@@ -67,10 +73,16 @@ font-weight: 700;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>497</width>
      <height>25</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuNPA_Notes">
+    <property name="title">
+     <string>NPA Notes</string>
+    </property>
+   </widget>
+   <addaction name="menuNPA_Notes"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

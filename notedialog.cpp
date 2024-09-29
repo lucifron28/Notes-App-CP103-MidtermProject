@@ -6,7 +6,7 @@ NoteDialog::NoteDialog(QWidget *parent)
     , ui(new Ui::NoteDialog)
 {
     ui->setupUi(this);
-
+    this->setWindowTitle("Notes");
     connect(ui->saveButton, &QPushButton::clicked, this, &NoteDialog::accept);
     connect(ui->cancelButton, &QPushButton::clicked, this, &NoteDialog::reject);
 }

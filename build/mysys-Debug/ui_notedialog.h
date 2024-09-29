@@ -34,18 +34,33 @@ public:
         textEdit = new QTextEdit(NoteDialog);
         textEdit->setObjectName("textEdit");
         textEdit->setGeometry(QRect(130, 90, 361, 311));
-        textEdit->setStyleSheet(QString::fromUtf8("padding: 10px;"));
+        textEdit->setStyleSheet(QString::fromUtf8("padding: 10px;\n"
+"background-color: #e09952;\n"
+"border: 2px solid black;\n"
+"color: black;"));
         lineEdit = new QLineEdit(NoteDialog);
         lineEdit->setObjectName("lineEdit");
         lineEdit->setGeometry(QRect(130, 50, 361, 41));
         lineEdit->setStyleSheet(QString::fromUtf8("font: 20px;\n"
-"font-weight: 800;"));
+"font-weight: 800;\n"
+"background-color: #98591B;\n"
+"border: 2px solid black;\n"
+"border-bottom: 0;\n"
+"color: white;"));
         saveButton = new QPushButton(NoteDialog);
         saveButton->setObjectName("saveButton");
         saveButton->setGeometry(QRect(190, 410, 83, 29));
+        saveButton->setStyleSheet(QString::fromUtf8("background-color: #824D17;\n"
+"border: 2px solid black;\n"
+"color: white;\n"
+"border-radius: 5px;"));
         cancelButton = new QPushButton(NoteDialog);
         cancelButton->setObjectName("cancelButton");
         cancelButton->setGeometry(QRect(350, 410, 83, 29));
+        cancelButton->setStyleSheet(QString::fromUtf8("background-color: #824D17;\n"
+"border: 2px solid black;\n"
+"color: white;\n"
+"border-radius: 5px;"));
 
         retranslateUi(NoteDialog);
 
