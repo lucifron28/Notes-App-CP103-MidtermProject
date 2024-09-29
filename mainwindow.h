@@ -3,12 +3,18 @@
 
 #include <QMainWindow>
 #include <QListWidget>
+#include <vector>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
 }
 QT_END_NAMESPACE
+
+struct Note {
+    QString title;
+    QString body;
+};
 
 class MainWindow : public QMainWindow
 {
@@ -20,11 +26,11 @@ public:
 
 private slots:
     void on_addButton_clicked();
-    void on_openButton_clicked();
-    void on_deleteButton_clicked();
+
 
 private:
     Ui::MainWindow *ui;
+    std::vector<Note> notes;
     void addListItem(const QString &text);
 };
 

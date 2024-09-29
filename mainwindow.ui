@@ -23,18 +23,42 @@
       <height>391</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: 	black;
+color: white;
+font-weight: bold;
+</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="addButton">
     <property name="geometry">
      <rect>
       <x>560</x>
-      <y>50</y>
+      <y>480</y>
       <width>83</width>
       <height>29</height>
      </rect>
     </property>
     <property name="text">
      <string>New Note</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>20</y>
+      <width>461</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding: 5px;
+font: 15pt &quot;Arial&quot;;
+font-weight: 700;</string>
+    </property>
+    <property name="text">
+     <string>New Programmerz Association Notes</string>
     </property>
    </widget>
   </widget>

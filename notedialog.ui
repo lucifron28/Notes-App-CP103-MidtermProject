@@ -22,6 +22,9 @@
      <height>311</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">padding: 10px;</string>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
@@ -31,6 +34,10 @@
      <width>361</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20px;
+font-weight: 800;</string>
    </property>
   </widget>
   <widget class="QPushButton" name="saveButton">

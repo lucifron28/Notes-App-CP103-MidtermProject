@@ -34,9 +34,12 @@ public:
         textEdit = new QTextEdit(NoteDialog);
         textEdit->setObjectName("textEdit");
         textEdit->setGeometry(QRect(130, 90, 361, 311));
+        textEdit->setStyleSheet(QString::fromUtf8("padding: 10px;"));
         lineEdit = new QLineEdit(NoteDialog);
         lineEdit->setObjectName("lineEdit");
         lineEdit->setGeometry(QRect(130, 50, 361, 41));
+        lineEdit->setStyleSheet(QString::fromUtf8("font: 20px;\n"
+"font-weight: 800;"));
         saveButton = new QPushButton(NoteDialog);
         saveButton->setObjectName("saveButton");
         saveButton->setGeometry(QRect(190, 410, 83, 29));

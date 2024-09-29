@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
@@ -26,6 +27,7 @@ public:
     QWidget *centralwidget;
     QListWidget *listWidget;
     QPushButton *addButton;
+    QLineEdit *lineEdit;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -39,9 +41,19 @@ public:
         listWidget = new QListWidget(centralwidget);
         listWidget->setObjectName("listWidget");
         listWidget->setGeometry(QRect(170, 80, 471, 391));
+        listWidget->setStyleSheet(QString::fromUtf8("background-color: 	black;\n"
+"color: white;\n"
+"font-weight: bold;\n"
+""));
         addButton = new QPushButton(centralwidget);
         addButton->setObjectName("addButton");
-        addButton->setGeometry(QRect(560, 50, 83, 29));
+        addButton->setGeometry(QRect(560, 480, 83, 29));
+        lineEdit = new QLineEdit(centralwidget);
+        lineEdit->setObjectName("lineEdit");
+        lineEdit->setGeometry(QRect(170, 20, 461, 51));
+        lineEdit->setStyleSheet(QString::fromUtf8("padding: 5px;\n"
+"font: 15pt \"Arial\";\n"
+"font-weight: 700;"));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -60,6 +72,7 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         addButton->setText(QCoreApplication::translate("MainWindow", "New Note", nullptr));
+        lineEdit->setText(QCoreApplication::translate("MainWindow", "New Programmerz Association Notes", nullptr));
     } // retranslateUi
 
 };
