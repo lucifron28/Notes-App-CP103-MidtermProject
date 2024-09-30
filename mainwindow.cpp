@@ -48,8 +48,28 @@ void MainWindow::addListItem(const QString &text)
     QPushButton *openButton = new QPushButton("Open");
     QPushButton *deleteButton = new QPushButton("Delete");
     widget->setStyleSheet({"border-bottom: 1px solid #824d17; margin-bottom: 5px; margin-top: 5px;"});
-    openButton->setStyleSheet({"background-color: #824d17; border-radius: 8px; border: 1px solid black; color: white;"});
-    deleteButton->setStyleSheet({"background-color: #8B0000; border-radius: 8px; border: 1px solid red; color: white;"});
+    openButton->setStyleSheet({"QPushButton {"
+                               "background-color: #824d17;"
+                               "border-radius: 8px; "
+                               "border: 1px solid black; "
+                               "color: white;}"
+                                "QPushButton:hover {"
+                                "background-color: rgba(255, 255, 255, 0.5);"
+                                "color: black;}"
+                                "QPushButton:pressed {"
+                                "background-color: black;"
+                                "color: white;"});
+    deleteButton->setStyleSheet({"QPushButton {"
+                               "background-color: #8B0000;"
+                               "border-radius: 8px; "
+                               "border: 1px solid black; "
+                               "color: white;}"
+                               "QPushButton:hover {"
+                               "background-color: rgba(255, 255, 255, 0.5);"
+                               "color: black;}"
+                               "QPushButton:pressed {"
+                               "background-color: black;"
+                               "color: white;"});
 
     layout->addWidget(label);
     layout->addWidget(openButton);

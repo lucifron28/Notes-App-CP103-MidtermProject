@@ -26,7 +26,8 @@
     <property name="styleSheet">
      <string notr="true">background-color: #e09952;
 color: black;
-font-weight: bold;</string>
+font-weight: bold;
+</string>
     </property>
    </widget>
    <widget class="QPushButton" name="addButton">
@@ -39,10 +40,24 @@ font-weight: bold;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: #824D17;
+     <string notr="true">QPushButton{
+background-color: #824D17;
 border: 2px solid black;
 color: white;
-border-radius: 5px;</string>
+border-radius: 5px;
+}
+
+QPushButton:hover {
+background-color: rgba(255, 255, 255, 0.5);
+color: black;
+}
+
+QPushButton:pressed {
+background-color: black;
+color: white;
+}
+
+</string>
     </property>
     <property name="text">
      <string>New Note</string>
